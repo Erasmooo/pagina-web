@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Technical Service</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f8f9fa;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    header {
+      background: #002f6c;
+      color: white;
+      padding: 1rem 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      text-align: center;
+      font-size: 2rem;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin-top: 1rem;
+    }
+
+    nav ul li {
+      margin: 0 1rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero {
+      background: linear-gradient(to bottom right, #004b8d, #007bff);
+      color: #ffffff;
+      text-align: center;
+      padding: 5rem 1rem 6rem; /* Aumentado para evitar sobreposição */
+    }
+
+    .hero h2 {
+      font-size: 2.8rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 2rem auto; /* Espaçamento inferior adicionado */
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.9rem 2rem;
+      background-color: #ffaa00;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    }
+
+    section {
+      padding: 3rem 0;
+    }
+
+    h2 {
+      text-align: center;
+      color: #002f6c;
+      font-size: 2rem;
+    }
+
+    .sobre p,
+    .clientes p {
+      text-align: center;
+      max-width: 900px;
+      margin: 1rem auto;
+    }
+
+    .servicos ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+      list-style: none;
+    }
+
+    .servicos ul li {
+      background: #fff;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .contacto ul {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .contacto form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .contacto input,
+    .contacto textarea {
+      padding: 1rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    .contacto button {
+      padding: 1rem;
+      background-color: #002f6c;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #002f6c;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 0;
+      margin-top: 2rem;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.getElementById("contact-form");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        alert("Obrigado pelo seu contacto! Entraremos em breve em contacto consigo.");
+        form.reset();
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Job Technical Service</h1>
+      <nav>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#clientes">Clientes</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Excelência em Serviços Técnicos</h2>
+      <p>Assistência técnica especializada, manutenção e soluções de engenharia adaptadas às suas necessidades.</p>
+      <a href="#contacto" class="btn">Peça um Orçamento</a>
+    </div>
+  </section>
+
+  <section id="sobre" class="sobre">
+    <div class="container">
+      <h2>Sobre Nós</h2>
+      <p>A <strong>Job Technical Service</strong> é uma empresa moçambicana especializada em serviços técnicos, assistência e manutenção de equipamentos industriais e comerciais. A nossa missão é garantir a eficiência e a durabilidade dos equipamentos dos nossos clientes, com profissionais experientes e soluções tecnológicas atualizadas.</p>
+    </div>
+  </section>
+
+  <section id="servicos" class="servicos">
+    <div class="container">
+      <h2>Os Nossos Serviços</h2>
+      <ul>
+        <li>Manutenção preventiva e corretiva</li>
+        <li>Assistência técnica a equipamentos industriais</li>
+        <li>Instalações elétricas e sistemas de segurança</li>
+        <li>Consultoria técnica e projetos personalizados</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="clientes" class="clientes">
+    <div class="container">
+      <h2>Clientes & Parceiros</h2>
+      <p>Trabalhamos com empresas de diversos setores, fornecendo soluções sob medida e suporte técnico contínuo.</p>
+      <p>Alguns dos nossos clientes: <strong>Petromoc, EDM, Cervejas de Moçambique, Correios de Moçambique</strong>.</p>
+    </div>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <div class="container">
+      <h2>Contacto</h2>
+      <center><p>Fale connosco para orçamentos ou parcerias:</p></center>
+     <center> <ul>
+        <li>📞 +258 84 123 4567</li>
+        <li>📧 contacto@jobtechnical.co.mz</li>
+        <li>📍 Av. 25 de Setembro, Maputo, Moçambique</li>
+      </ul></center>
+      <form id="contact-form">
+        <input type="text" placeholder="Seu nome" required>
+        <input type="email" placeholder="Seu e-mail" required>
+        <textarea placeholder="Mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Job Technical Service. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
